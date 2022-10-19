@@ -1,0 +1,27 @@
+Exercise: Build a Docker network with a load balancer and application layer
+time: 1 hour
+
+In this exercise, you will now combine knowledge from previous sessions and build a docker network. 
+
+Prerequisites: 
+1) A linux VM (Ubuntu 20.04)
+2) Install Docker on this linux VM
+3) Open port 80 on the network 
+
+
+Step 1: Build a docker network.
+This docker network should have 2 containers as detailed in next steps. 
+
+Step 2: Add containers to the network
+1) Application Container: A python flask API built by you. This can be a very simple hello world example. 
+    a) Build a python flask API that runs on port number 9000
+    b) Create a Dockerfile that builds this container 
+    c) Use docker build command to name this container as server
+2) Load Balancer to take user requests: An Nginx container that take requests from the user and forwards it to a container called server on port 9000. 
+    Hint: QA Community!
+    
+    
+Step 3: Access the application 
+
+Go to the IP address of the machine. Do you see your flask hello world here now?
+
